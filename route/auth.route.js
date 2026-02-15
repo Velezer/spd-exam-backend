@@ -11,8 +11,8 @@ router.post("/register", async (req, res, next) => {
     const { name, email, password } = req.body;
 
     // Validasi input
-    if (!name || !email || !password) {
-      return res.status(400).json({ error: "Name, email, and password are required" });
+    if (!email || !password) {
+      return res.status(400).json({ error: "email and password are required" });
     }
 
     // Cek apakah user sudah ada

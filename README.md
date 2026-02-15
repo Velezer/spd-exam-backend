@@ -21,14 +21,6 @@ cd spd-exam-backend
 npm install
 ```
 
-Packages yang diinstal:
-- `express`: Web framework
-- `mongoose`: MongoDB ODM
-- `jsonwebtoken`: JWT token generation
-- `bcryptjs`: Password hashing
-- `cors`: Cross-Origin Resource Sharing
-- `dotenv`: Environment variables
-
 ### 3. Setup Environment Variables
 
 Buat file `.env` dari `.env.example`:
@@ -54,12 +46,7 @@ PORT=3000
 CLIENT_ORIGIN=http://localhost:3000,http://localhost:3001,http://localhost:5173,http://localhost:19000,*
 ```
 
-### 4.0 Seeder Product (Optional)
-```bash
-npm run seed
-```
-
-### 4.1 Run Server
+### 4 Run Server
 
 **Development Mode**:
 ```bash

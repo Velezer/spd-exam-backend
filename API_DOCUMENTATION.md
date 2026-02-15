@@ -126,6 +126,7 @@ Authorization: Bearer <token>
     "quantity": 5,
     "description": "High performance gaming laptop",
     "imgUrl": "https://example.com/laptop.jpg",
+    "videoUrl": "https://example.com/tutorial-laptop.mp4",
     "createdAt": "2024-02-07T10:00:00.000Z",
     "updatedAt": "2024-02-07T10:00:00.000Z"
   }
@@ -144,6 +145,7 @@ Authorization: Bearer <token>
   "quantity": 5,
   "description": "High performance gaming laptop",
   "imgUrl": "https://example.com/laptop.jpg",
+  "videoUrl": "https://example.com/tutorial-laptop.mp4",
   "createdAt": "2024-02-07T10:00:00.000Z",
   "updatedAt": "2024-02-07T10:00:00.000Z"
 }
@@ -152,7 +154,6 @@ Authorization: Bearer <token>
 ### 3. Create Product
 - **Endpoint**: `POST /api/products`
 - **Protected**: Yes (requires token)
-- **Description**: Membuat produk baru
 - **Body**:
 ```json
 {
@@ -160,9 +161,11 @@ Authorization: Bearer <token>
   "price": 5000000,
   "quantity": 20,
   "description": "Latest Android smartphone with 5G support",
-  "imgUrl": "https://example.com/phone.jpg"
+  "imgUrl": "https://example.com/phone.jpg",
+  "videoUrl": "https://example.com/tutorial-phone.mp4"
 }
 ```
+- **Notes**: Both `imgUrl` and `videoUrl` are optional
 - **Response** (201):
 ```json
 {
@@ -172,6 +175,7 @@ Authorization: Bearer <token>
   "quantity": 20,
   "description": "Latest Android smartphone with 5G support",
   "imgUrl": "https://example.com/phone.jpg",
+  "videoUrl": "https://example.com/tutorial-phone.mp4",
   "createdAt": "2024-02-07T10:00:00.000Z",
   "updatedAt": "2024-02-07T10:00:00.000Z"
 }
@@ -180,8 +184,18 @@ Authorization: Bearer <token>
 ### 4. Update Product
 - **Endpoint**: `PUT /api/products/:id`
 - **Protected**: Yes (requires token)
-- **Description**: Update informasi produk
-- **Body**: (same as create, all fields required)
+- **Body**:
+```json
+{
+  "name": "Smartphone Android",
+  "price": 5000000,
+  "quantity": 20,
+  "description": "Latest Android smartphone with 5G support",
+  "imgUrl": "https://example.com/phone.jpg",
+  "videoUrl": "https://example.com/tutorial-phone.mp4"
+}
+```
+- **Notes**: Both `imgUrl` and `videoUrl` are optional
 - **Response** (200): Updated product object
 
 ### 5. Delete Product
@@ -365,6 +379,7 @@ Authorization: Bearer <token>
   quantity: Number,
   description: String,
   imgUrl: String,
+  videoUrl: String,
   createdAt: Date,
   updatedAt: Date
 }

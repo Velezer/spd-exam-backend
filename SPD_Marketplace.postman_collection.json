@@ -407,7 +407,7 @@
   "variable": [
     {
       "key": "base_url",
-      "value": "https://spd-lab-backend-db797613f87b.herokuapp.com",
+      "value": "https://spd-exam-backend-2af53d7fefb5.herokuapp.com",
       "type": "string"
     },
     {

@@ -1,6 +1,6 @@
 # SPD Online Marketplace - Backend API Documentation
 
-**Base URL**: https://spd-lab-backend-db797613f87b.herokuapp.com
+**Base URL**: https://spd-exam-backend-2af53d7fefb5.herokuapp.com
 
 
 ## Postman Collection
@@ -32,7 +32,7 @@ Postman Collection dapat digunakan untuk hit API tanpa perlu import satu-satu. S
 ## Base URL
 ```
 http://localhost:3000
-https://spd-lab-backend-db797613f87b.herokuapp.com
+https://spd-exam-backend-2af53d7fefb5.herokuapp.com
 ```
 
 ## Authentication

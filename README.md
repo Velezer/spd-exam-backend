@@ -1,6 +1,6 @@
 # SPD Online Marketplace - Backend API
 **Technology Stack**: Node.js, Express.js, MongoDB, JWT Authentication, Heroku
-**Base URL**: https://spd-lab-backend-db797613f87b.herokuapp.com
+**Base URL**: https://spd-exam-backend-2af53d7fefb5.herokuapp.com
 
 ## 🔧 Setup & Installation
 
@@ -13,7 +13,7 @@
 ### 1. Clone Repository
 ```bash
 git clone <repository-url>
-cd spd-lab-backend
+cd spd-exam-backend
 ```
 
 ### 2. Install Dependencies
